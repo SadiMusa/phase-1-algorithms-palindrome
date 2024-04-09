@@ -23,3 +23,17 @@ if (require.main === module) {
 }
 
 module.exports = isPalindrome;
+
+
+function isPalindrome(word) {
+ 
+  const reversedWord = reverse(word);
+
+  return word === reversedWord;
+
+}
+
+function reverse(word) {
+  return word.split("").reverse().join("");
+}
+
